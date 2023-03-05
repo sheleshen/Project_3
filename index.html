@@ -24,7 +24,70 @@
 </head>
 <body>
 
-
+<section class="background-form">
+    <div>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <h3 class="header-form">Регистрация</h3>
+            <div class="list-name">
+                <div class="input-item-name">
+                    <label for="Name">Имя</label>
+                    <input type="text" name="Name" class="form-input">
+                </div> 
+                <div class="input-item-name">
+                    <label for="LastName">Фамилия</label>
+                    <input type="text" name="LastName" class="form-input">
+                </div> 
+                <div class="input-item-name">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" class="form-input">
+                </div>
+                <div class="input-item-name">
+                    <label for="LastName">Телефон</label>
+                    <input type="text" name="LastName" class="form-input">
+                </div>
+            </div>
+            <div>
+                <h4 class="header-adress">Адрес доставки</h4>
+                <div class="list-adress">
+                    <div class="input-item-country">
+                        <label for="Country">Страна</label>
+                        <input type="text" name="Country" class="form-input">
+                    </div>
+                    <div class="input-item-country">
+                        <label for="city">Город</label>
+                        <input type="text" name="city" class="form-input">
+                    </div>
+                    <div class="input-item-country">
+                        <label for="index">Почтовый индекс</label>
+                        <input type="text" name="index" class="form-input">
+                    </div>
+                </div>
+                <div class="list-delivery">
+                    <div class="input-item-delivery">
+                        <label for="delivery">Адрес доставки (улица, дом, квартира)</label>
+                        <input type="text" name="delivery" class="form-input">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="header-notification">Уведомлять об акциях и скидках</h4>
+                <p class="text-notification">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                <div class="list-notification">
+                    <input type="checkbox" name="notification" id="option-email" value="email" class="form-input">
+                    <label for="option-email">По Email</label>
+                </div>
+                <div class="list-notification">
+                    <input type="checkbox" name="notification" id="option-sms" value="sms" class="form-input">
+                    <label for="option-sms">По SMS</label>
+                </div>
+                <div class="list-notification">
+                    <input type="checkbox" name="notification" id="option-push" value="push" class="form-input">
+                    <label for="option-push">Push-уведомления в приложении</label>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
 
 </body>
 </html>
