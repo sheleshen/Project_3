@@ -22,7 +22,7 @@
     <title>Form</title>
 
 </head>
-<body>
+<body>s
 
 <section class="background-form">
     <div class="section-container">
@@ -60,16 +60,16 @@
                                 <div class="list-adress">
                                     <div class="input-item-adress">
                                         <label for="country">Страна</label>
-                                        <input type="text" name="country" class="form-input">
-                                    </div>
-                                    <div class="input-item-adress">
-                                        <label for="city">Город</label>
                                         <select name="city" id="" class="form-input">
                                             <option value="Russia">Россия</option>
                                             <option value="Belarus">Беларусь</option>
                                             <option value="Kazakhstan">Казахстан</option>
                                             <option value="Poland">Польша</option>
                                         </select>
+                                    </div>
+                                    <div class="input-item-adress">
+                                        <label for="city">Город</label>
+                                        <input type="text" name="country" class="form-input">
                                     </div>
                                     <div class="input-item-adress">
                                         <label for="index">Почтовый индекс</label>
@@ -90,17 +90,17 @@
                             <h3 class="header-notification">Уведомлять об акциях и скидках</h3>
                             <p class="text-notification">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
                             <div class="indent-input">
-                                <div class="list-notification">
-                                    <input type="checkbox" name="notification" id="option-email" value="email" class="form-input">
-                                    <label for="option-email">По Email</label>
+                                <div class="list-notification indent-check">
+                                    <input type="checkbox" name="notification" id="option-email" value="email" class="checkbox">
+                                    <label for="option-email" class="label-check">По Email</label>
+                                </div>
+                                <div class="list-notification indent-check">
+                                    <input type="checkbox" name="notification" id="option-sms" value="sms" class="checkbox">
+                                    <label for="option-sms" class="label-check">По SMS</label>
                                 </div>
                                 <div class="list-notification">
-                                    <input type="checkbox" name="notification" id="option-sms" value="sms" class="form-input">
-                                    <label for="option-sms">По SMS</label>
-                                </div>
-                                <div class="list-notification">
-                                    <input type="checkbox" name="notification" id="option-push" value="push" class="form-input">
-                                    <label for="option-push">Push-уведомления в приложении</label>
+                                    <input type="checkbox" name="notification" id="option-push" value="push" class="checkbox">
+                                    <label for="option-push" class="label-check">Push-уведомления в приложении</label>
                                 </div>
                             </div>
                         </div>
