@@ -29,55 +29,61 @@
         <div class="decorative-form">
             <div class="container-form">
                 <div class="container-image">
-                    <!-- <img src="/images/mountains-2.jpg" alt="Лучше гор только горы" class="image"> -->
+                    <img src="/images/mountains-2.jpg" alt="Лучше гор только горы" class="image">
                 </div>
                 <div class="form-data">
                     <form action="https://jsonplaceholder.typicode.com/posts" method="post">
                         <h2 class="header-form">Регистрация</h2>
-                        <div class="list-name">
-                            <div class="input-item-name">
-                                <label for="firstName">Имя</label>
-                                <input type="text" name="firstName" class="form-input">
-                            </div> 
-                            <div class="input-item-name">
-                                <label for="LastName">Фамилия</label>
-                                <input type="text" name="LastName" class="form-input">
-                            </div> 
-                            <div class="input-item-name">
-                                <label for="Email">Email</label>
-                                <input type="email" name="Email" class="form-input">
-                            </div>
-                            <div class="input-item-name">
-                                <label for="phone">Телефон</label>
-                                <input type="text" name="phone" class="form-input">
+                        <div class="indent-input">
+                            <div class="list-name">
+                                <div class="input-item-name">
+                                    <label for="firstName">Имя</label>
+                                    <input type="text" name="firstName" class="form-input">
+                                </div> 
+                                <div class="input-item-name">
+                                    <label for="LastName">Фамилия</label>
+                                    <input type="text" name="LastName" class="form-input">
+                                </div> 
+                                <div class="input-item-name">
+                                    <label for="Email">Email</label>
+                                    <input type="email" name="Email" class="form-input">
+                                </div>
+                                <div class="input-item-name">
+                                    <label for="phone">Телефон</label>
+                                    <input type="text" name="phone" class="form-input">
+                                </div>
                             </div>
                         </div>
                         <div>
                             <h3 class="header-adress">Адрес доставки</h3>
-                            <div class="list-adress">
-                                <div class="input-item-country">
-                                    <label for="country">Страна</label>
-                                    <input type="text" name="country" class="form-input">
+                            <div class="indent-input">
+                                <div class="list-adress">
+                                    <div class="input-item-adress">
+                                        <label for="country">Страна</label>
+                                        <input type="text" name="country" class="form-input">
+                                    </div>
+                                    <div class="input-item-adress">
+                                        <label for="city">Город</label>
+                                        <select name="city" id="" class="form-input">
+                                            <option value="Russia">Россия</option>
+                                            <option value="Belarus">Беларусь</option>
+                                            <option value="Kazakhstan">Казахстан</option>
+                                            <option value="Poland">Польша</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-item-adress">
+                                        <label for="index">Почтовый индекс</label>
+                                        <input type="text" name="index" class="form-input">
+                                    </div>
                                 </div>
-                                <div class="input-item-country">
-                                    <label for="city">Город</label>
-                                    <select name="city" id="" class="form-input">
-                                        <option value="Russia">Россия</option>
-                                        <option value="Belarus">Беларусь</option>
-                                        <option value="Kazakhstan">Казахстан</option>
-                                        <option value="Poland">Польша</option>
-                                    </select>
+                            
+                                <div class="list-delivery">
+                                    <div class="input-item-delivery">
+                                        <label for="delivery">Адрес доставки (улица, дом, квартира)</label>
+                                        <input type="text" name="delivery" class="form-input">
+                                    </div>
                                 </div>
-                                <div class="input-item-country">
-                                    <label for="index">Почтовый индекс</label>
-                                    <input type="text" name="index" class="form-input">
-                                </div>
-                            </div>
-                            <div class="list-delivery">
-                                <div class="input-item-delivery">
-                                    <label for="delivery">Адрес доставки (улица, дом, квартира)</label>
-                                    <input type="text" name="delivery" class="form-input">
-                                </div>
+                                
                             </div>
                         </div>
                         <div>
@@ -96,8 +102,8 @@
                                 <label for="option-push">Push-уведомления в приложении</label>
                             </div>
                         </div>
+                        <button class="btn-form">Создать аккаунт</button>
                     </form>
-                    <button class="btn-form">Создать аккаунт</button>
                 </div>
             </div>
         </div>
