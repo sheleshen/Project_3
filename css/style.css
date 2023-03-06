@@ -18,6 +18,8 @@
     --indent-input: 30px;
     --shadow: rgba(0, 0, 0, 0.25);
     --mar-form-input: 8px;
+    --head-top: 30px;
+    --head-bot: 20px;
 }
 
 
@@ -30,6 +32,7 @@ h3 {
     font-size: 18px;
     font-weight: 600;
     color: var(--text); 
+    padding: var(--head-top) 0 var(--head-bot) 0;
 }
 
 p {
@@ -115,14 +118,15 @@ label {
 
 .form-input {
     background-color: var(--white);
-    border: 1px solid var(--light-gray);
-    border-radius: 5px;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
     padding: 10px 15px 10px 15px;
     margin-top: var(--mar-form-input);
 }
 
-.header-adress {
-    padding: var(--indent-input) 0;
+.form-input:focus {
+    border: 2px solid var(--secondary-color);
+    outline: none;
 }
 
 .list-adress {
@@ -147,11 +151,25 @@ label {
     width: calc(100%/1);
 }
 
+.text-notification {
+    padding-bottom: 10px;
+}
+
 .btn-form {
     background-color: var(--main-color);
-    font-size: 16px;
+    font-size: 15px;
     color: var(--white);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 10px 15px 10px 15px;
+    margin-top: var(--indent-input);
+    width: 100%;
+}
+
+.btn-form:active {
+    background-color: var(--secondary-color);
+}
+
+.btn-form:hover {
+    background-color: var(--secondary-color);
 }
