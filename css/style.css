@@ -162,6 +162,8 @@ label, select, option {
     background-repeat: no-repeat, repeat;
     background-position: right 15px top 55%;
     background-size: 10px auto; 
+
+    transition: background-image 100ms linear;
 }
 
 .select-form:hover {
@@ -186,13 +188,14 @@ label, select, option {
 }
 
 .indent-check {
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .label-check {
     font-size: 14px;
     font-weight: 600;
     padding-left: 8px;
+    color: var(--dark-gray);
 }
 
 .checkbox {
@@ -216,7 +219,7 @@ label, select, option {
 
 .btn-form {
     background-color: var(--main-color);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--white);
     border: none;
@@ -224,6 +227,9 @@ label, select, option {
     padding: 15px 15px;
     margin-top: var(--indent-input);
     width: 100%;
+
+    cursor: pointer;
+    transition: background-color 200ms linear;
 }
 
 .btn-form:active {
